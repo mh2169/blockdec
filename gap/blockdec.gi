@@ -9,7 +9,7 @@
 
 InstallGlobalFunction( blockdectest_Example,
 function(inputs)
-	Print( "This is a placeholder function, replace it with your own code.\n" );
+	Print( "Sanity check to make sure that the functions are working.\n" );
 end );
 
 InstallGlobalFunction(UnMonoidDecomposition,

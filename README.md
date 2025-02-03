@@ -1,18 +1,10 @@
 # The GAP package blockdectest
 
-TODO: add a description of your package; perhaps also instructions how how to
-install and use it, resp. where to find out more
+This is an implementation of the block product Krohn-Rhodes Theorem, and is an extension of the [SgpDec package](https://github.com/gap-packages/sgpdec/).
 
+## How to use
+Ensure that the [SgpDec package](https://github.com/gap-packages/sgpdec/) is installed - follow the instructions provided. Then, simply extract 
 
-## Contact
-
-TODO: add info on how to contact you and/or how to report issues with your
-package
 
 ## License
-
-TODO: Provide information on the license of your package. A license is
-important as it determines who has a right to distribute your package. The
-"default" license to consider is GNU General Public License v2 or later, as
-that is the license of GAP itself.
-"# blockdec" 
+This project is open-source and licensed under the GNU General Public License v2.0.
