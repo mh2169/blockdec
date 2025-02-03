@@ -1,5 +1,5 @@
 #
-# blockdectest: blockdec
+# blockdec: blockdec
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 
 InstallGlobalFunction( blockdectest_Example,
-function()
+function(inputs)
 	Print( "This is a placeholder function, replace it with your own code.\n" );
 end );
 
@@ -18,17 +18,22 @@ InstallGlobalFunction(UnMonoidDecomposition,
 	# The monoid U_N < U_N-1 ≀ U_2. We also have that U_2 < U_1 □ U_1. Thus we can simply decompose U_N into the iterated block product of 2N U_1s.
 	# This is very naive - ideally find if it is possible to reduce the number of decompositions.
 	# TODO: Find a better implementation
-	local str, i, l;
-	l := [];
-	for i in [1..points] do
-		Add(l, "U1 □ U1");
-	od;
 
-	str := "";
-	for i in [1..Length(l)] do
-		Append(str, Concatenation(l[i], "□"));
-	od;
-	return str;
+	Print("This should print stuff");
+
+	# local str, i, l;
+	# l := [];
+	# str := "";
+	# for i in [1..points] do
+	# 	Add(l, "U1 □ U1");
+	# od;
+
+	# for i in [1..Length(l)] do
+	# 	Append(str, Concatenation(l[i], "□"));
+	# od;
+	# Print(str);
+	# return str;
+	
 end);
 
 
@@ -47,7 +52,7 @@ function(sk)
 				Add(l, UnMonoidDecomposition(NumOfPointsInSlot(sk, level, i))  );
 			else
 				Add(l, Concatenation("(",String(NumOfPointsInSlot(sk,level,i)),
-									",", StructureDescription(groups[i]),")"));
+									",", StructureDescription(gl[i]),")"));
 
 			fi;
 		od;

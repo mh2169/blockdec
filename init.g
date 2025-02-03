@@ -4,4 +4,4 @@
 # Reading the declaration part of the package.
 #
 
-ReadPackage( "blockdectest", "gap/blockdectest.gd");
+ReadPackage( "blockdec", "gap/blockdec.gd");

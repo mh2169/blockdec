@@ -1,5 +1,5 @@
 #
-# blockdectest: blockdec
+# blockdec: blockdec
 #
 # This file contains package meta data. For additional information on
 # the meaning and correct usage of these fields, please consult the
@@ -41,7 +41,7 @@ ArchiveFormats := ".tar.gz",
 AbstractHTML   :=  "",
 
 PackageDoc := rec(
-  BookName  := "blockdectest",
+  BookName  := "blockdec",
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0_mj.html",
   PDFFile   := "doc/manual.pdf",
