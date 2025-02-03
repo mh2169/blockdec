@@ -17,7 +17,6 @@
 #! @Description
 #!   Insert documentation for your function here
 DeclareGlobalFunction("blockdectest_Example" );
-DeclareGlobalFunction("dhc123");
 DeclareGlobalFunction("UnMonoidDecomposition");
 DeclareGlobalFunction("blockexpl")
 
