@@ -2,7 +2,6 @@
 # blockdec: blockdec
 #
 # Implementations
-#
 
 # LoadPackage("blockdec");
 # S6 := Semigroup( [Transformation([1,2,3,1,1,1]), Transformation([4,4,4,5,4,6]),  Transformation([4,4,4,5,6,4]), Transformation([4,4,4,4,5,5]), Transformation([4,4,4,1,2,3]), Transformation([2,3,1,4,4,4])] );
@@ -19,20 +18,18 @@ InstallGlobalFunction(UnMonoidDecomposition,
 	# This is very naive - ideally find if it is possible to reduce the number of decompositions.
 	# TODO: Find a better implementation
 
-	Print("This should print stuff");
+	local str, i, l;
+	l := [];
+	str := "";
+	for i in [1..points] do
+		Add(l, "U1 □ U1");
+	od;
 
-	# local str, i, l;
-	# l := [];
-	# str := "";
-	# for i in [1..points] do
-	# 	Add(l, "U1 □ U1");
-	# od;
-
-	# for i in [1..Length(l)] do
-	# 	Append(str, Concatenation(l[i], "□"));
-	# od;
-	# Print(str);
-	# return str;
+	for i in [1..Length(l)] do
+		Append(str, Concatenation(l[i], "□"));
+	od;
+	Print(str);
+	return str;
 	
 end);
 
