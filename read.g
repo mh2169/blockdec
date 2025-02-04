@@ -3,4 +3,4 @@
 #
 # Reading the implementation part of the package.
 #
-ReadPackage( "blockdectest", "gap/blockdectest.gi");
+ReadPackage( "blockdec", "gap/blockdec.gi");

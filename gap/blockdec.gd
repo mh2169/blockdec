@@ -18,6 +18,9 @@
 #!   Insert documentation for your function here
 DeclareGlobalFunction("blockdectest_Example" );
 DeclareGlobalFunction("UnMonoidDecomposition");
-DeclareGlobalFunction("blockexpl")
+DeclareGlobalFunction("blockd");
+
+# DeclareOperation("blckexpl", [IsSkeleton]);
+
 
 # DeclareGlobalFunction("dhc")
